@@ -1,0 +1,73 @@
+.category {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px !important;
+  justify-content: center; /* Center the items for a cleaner layout */
+  gap: 20px; /* Add some space between cards */
+}
+
+.category .card {
+  background-color: #f8f9fa;
+  width: 18rem;
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.category .card:hover {
+  transform: translateY(-10px); /* Subtle hover animation */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.1);
+}
+
+.category .card-name-price {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+  font-size: 1rem;
+  font-weight: bold;
+  color: #333;
+}
+
+.category .card-price {
+  color: #27ae60; /* Softer, more modern green */
+  font-weight: bold;
+}
+
+.category button {
+  border-radius: 0;
+  width: 100%;
+  background-color: #3498db; /* Updated button color */
+  color: white;
+  padding: 10px;
+  border-top-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  font-size: 14px;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.category button:hover {
+  background-color: #2980b9; /* Darker blue on hover */
+}
+
+.category .card-text {
+  color: #5d5d5d; /* A softer, more modern gray */
+  font-size: 0.9rem;
+  padding: 10px;
+}
+
+.category .card img:hover {
+  transform: scale(1.05); /* Slightly enlarges image on hover for a modern effect */
+  transition: transform 0.3s ease;
+}
+
+.category .card-img-top {
+  height: 300px !important;
+  object-fit: cover; /* Ensures the image fits the card nicely */
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}

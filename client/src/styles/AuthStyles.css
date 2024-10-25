@@ -1,0 +1,82 @@
+/* ===================================
+========= register page  */
+.form-container {
+  margin-top: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 70vh;
+  flex-direction: column;
+  background-color: #f0f4f8;
+  background-image: linear-gradient(120deg, #f0f4f8 0%, #d9e4ec 100%);
+  border-radius: 10px;
+}
+
+.form-container form {
+  box-shadow: 0px 8px 25px rgba(0, 0, 0, 0.15);
+  padding: 30px;
+  background-color: #ffffff;
+  border-radius: 12px;
+  max-width: 400px;
+  width: 100%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.form-container form:hover {
+  transform: translateY(-5px);
+}
+
+.form-container form .title {
+  text-align: center;
+  margin-bottom: 20px;
+  font-weight: bold;
+  font-family: "Playfair Display", serif;
+  font-size: 1.8rem;
+  color: #333;
+}
+
+.form-container form input {
+  border: none;
+  border-bottom: 2px solid #d1d1d1;
+  border-radius: 0;
+  padding: 10px;
+  margin-bottom: 15px;
+  width: 100%;
+  transition: border-color 0.3s;
+}
+
+.form-container form input:focus {
+  border-bottom: 2px solid #3498db;
+  outline: none;
+}
+
+.form-container form button {
+  border: none;
+  border-radius: 5px;
+  background-color: #3498db;
+  color: #fff;
+  padding: 12px 0;
+  width: 100%;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+.form-container form button:hover {
+  background-color: #2980b9;
+}
+
+.forgot-btn {
+  background-color: transparent;
+  color: #3498db;
+  border: none;
+  padding: 10px 0;
+  font-size: 0.9rem;
+  cursor: pointer;
+  text-align: center;
+}
+
+.forgot-btn:hover {
+  color: #2980b9;
+  text-decoration: underline;
+}
